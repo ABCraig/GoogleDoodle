@@ -12,6 +12,7 @@
   <link href="gwddoubleclick_style.css" rel="stylesheet" data-version="11" data-exports-type="gwd-doubleclick">
   <link href="gwdimage_style.css" rel="stylesheet" data-version="9" data-exports-type="gwd-image">
   <link href="gwdtaparea_style.css" rel="stylesheet" data-version="4" data-exports-type="gwd-taparea">
+  <link href="gwdvideo_style.css" rel="stylesheet" data-version="7" data-exports-type="gwd-video">
   <style type="text/css" id="gwd-center-page-style">
     #page1 {
       left: 50%;
@@ -407,11 +408,11 @@
         transform: translate3d(0px, 0px, 0px);
         animation-timing-function: ease;
       }
-      22.22% {
+      33.33% {
         transform: translate3d(1px, -174px, 0px);
         animation-timing-function: ease;
       }
-      61.11% {
+      66.67% {
         transform: translate3d(1px, -174px, 0px);
         animation-timing-function: ease;
       }
@@ -421,18 +422,18 @@
       }
     }
     #page1_1.gwd-play-animation .gwd-gen-7z6bgwdanimation {
-      animation: gwd-gen-7z6bgwdanimation_gwd-keyframes 9s linear 0s 1 normal forwards;
+      animation: gwd-gen-7z6bgwdanimation_gwd-keyframes 12s linear 0s 1 normal forwards;
     }
     @keyframes gwd-gen-wequgwdanimation_gwd-keyframes {
       0% {
         transform: translate3d(0px, 0px, 0px);
         animation-timing-function: ease;
       }
-      22.22% {
+      33.33% {
         transform: translate3d(2px, -162px, 0px);
         animation-timing-function: ease;
       }
-      61.11% {
+      66.67% {
         transform: translate3d(1px, -160px, 0px);
         animation-timing-function: ease;
       }
@@ -442,18 +443,18 @@
       }
     }
     #page1_1.gwd-play-animation .gwd-gen-wequgwdanimation {
-      animation: gwd-gen-wequgwdanimation_gwd-keyframes 9s linear 0s 1 normal forwards;
+      animation: gwd-gen-wequgwdanimation_gwd-keyframes 12s linear 0s 1 normal forwards;
     }
     @keyframes gwd-gen-x6e1gwdanimation_gwd-keyframes {
       0% {
         transform: translate3d(0px, 0px, 0px);
         animation-timing-function: ease;
       }
-      22.22% {
+      33.33% {
         transform: translate3d(0px, 0px, 0px);
         animation-timing-function: linear;
       }
-      61.11% {
+      66.67% {
         transform: translate3d(46px, 14px, 0px);
         animation-timing-function: ease;
       }
@@ -463,7 +464,7 @@
       }
     }
     #page1_1.gwd-play-animation .gwd-gen-x6e1gwdanimation {
-      animation: gwd-gen-x6e1gwdanimation_gwd-keyframes 9s linear 0s 1 normal forwards;
+      animation: gwd-gen-x6e1gwdanimation_gwd-keyframes 12s linear 0s 1 normal forwards;
     }
     .gwd-img-1uv3 {
       position: absolute;
@@ -807,7 +808,7 @@
         animation-timing-function: linear;
       }
       100% {
-        transform: translate3d(192px, -291px, 0px);
+        transform: translate3d(-28px, -57px, 0px);
         width: 210px;
         height: 242px;
         animation-timing-function: linear;
@@ -858,6 +859,20 @@
     #page1_3.gwd-play-animation .gwd-gen-1uddgwdanimation {
       animation: gwd-gen-1uddgwdanimation_gwd-keyframes 6s linear 0s 1 normal forwards;
     }
+    .gwd-video-60ju {
+      width: 200px;
+      height: 140px;
+      position: absolute;
+      left: 386px;
+      top: -168px;
+    }
+    .gwd-video-gg2q {
+      width: 200px;
+      height: 140px;
+      position: absolute;
+      left: 457px;
+      top: -110px;
+    }
   </style>
   <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Oxygen|Dancing+Script|Lobster|Pacifico|Yellowtail|Courgette|Satisfy|Cookie|Tangerine|Playball" rel="stylesheet" type="text/css"><script data-source="googbase_min.js" data-version="3" data-exports-type="googbase" src="googbase_min.js"></script><script data-source="gwd_webcomponents_min.js" data-version="5" data-exports-type="gwd_webcomponents" src="gwd_webcomponents_min.js"></script>
   <script
@@ -894,6 +909,10 @@
           // GWD Predefined Function
           gwd.actions.gwdPagedeck.goToPage('pagedeck', 'page1', 'fade', 1000, 'linear', 'top');
         };
+        gwd.auto_Gwd_image_33Click = function(event) {
+          // GWD Predefined Function
+          gwd.actions.gwdDoubleclick.exit('gwd-ad', ' Amazon', 'https://www.amazon.com/Santa-Claus-Comin-Little-Drummer/dp/B00006II5M', false, false);
+        };
       </script>
       <script type="text/javascript" gwd-events="registration">
         // Support code for event handling in Google Web Designer
@@ -906,6 +925,7 @@
           gwd.actions.events.addHandler('gwd-taparea_3', 'click', gwd.auto_Gwd_taparea_3Click1, false);
           gwd.actions.events.addHandler('gwd-taparea_4', 'click', gwd.auto_Gwd_taparea_4Click, false);
           gwd.actions.events.addHandler('backBTN', 'click', gwd.auto_BackBTNClick, false);
+          gwd.actions.events.addHandler('gwd-image_33', 'click', gwd.auto_Gwd_image_33Click, false);
         };
         gwd.actions.events.deregisterEventHandlers = function(event) {
           gwd.actions.events.removeHandler('playBTN', 'click', gwd.auto_PlayBTNClick, false);
@@ -915,10 +935,12 @@
           gwd.actions.events.removeHandler('gwd-taparea_3', 'click', gwd.auto_Gwd_taparea_3Click1, false);
           gwd.actions.events.removeHandler('gwd-taparea_4', 'click', gwd.auto_Gwd_taparea_4Click, false);
           gwd.actions.events.removeHandler('backBTN', 'click', gwd.auto_BackBTNClick, false);
+          gwd.actions.events.removeHandler('gwd-image_33', 'click', gwd.auto_Gwd_image_33Click, false);
         };
         document.addEventListener("DOMContentLoaded", gwd.actions.events.registerEventHandlers);
         document.addEventListener("unload", gwd.actions.events.deregisterEventHandlers);
       </script><script data-source="gwdtaparea_min.js" data-version="4" data-exports-type="gwd-taparea" src="gwdtaparea_min.js"></script>
+      <script data-source="gwdvideo_min.js" data-version="7" data-exports-type="gwd-video" src="gwdvideo_min.js"></script>
 </head>
 
 <body>
@@ -953,6 +975,7 @@
           <img is="gwd-image" source="assets/green-light.png" id="gwd-image_27" class="gwd-img-zqqw">
           <img is="gwd-image" source="assets/orange-light.png" id="gwd-image_28" class="gwd-img-w0nc">
           <img is="gwd-image" source="assets/E.png" id="gwd-image_29" class="gwd-img-ofue">
+          <video is="gwd-video" id="gwd-video_1" controls="" sources="assets/Ella Fitzgerald-Sleigh Ride.mp4" class="gwd-video-60ju" loop="" autoplay=""></video>
         </div>
       </div>
       <div id="page1_1" is="gwd-page" class="gwd-page-wrapper gwd-lightbox gwd-div-al8e" data-gwd-width="660px" data-gwd-height="264px" expanded="" centered="">
@@ -963,6 +986,7 @@
           <img is="gwd-image" source="assets/elf.png" id="gwd-image_30" class="gwd-img-8ig0 gwd-gen-7z6bgwdanimation">
           <p class="gwd-p-1cft gwd-gen-wequgwdanimation" contenteditable="true">Santa Will be here Soon!</p>
           <p class="gwd-p-go95 gwd-gen-x6e1gwdanimation" contenteditable="true">Where is Santa?? Click outside to look!</p>
+          <video is="gwd-video" id="gwd-video_2" controls="" sources="assets/Ella Fitzgerald-Sleigh Ride.mp4" class="gwd-video-gg2q" loop="" autoplay=""></video>
         </div>
       </div>
       <div id="page1_2" is="gwd-page" class="gwd-page-wrapper gwd-lightbox gwd-div-xmbs" data-gwd-width="660px" data-gwd-height="264px" expanded="" centered="">
@@ -988,6 +1012,7 @@
         </div>
       </div>
     </div>
+    <gwd-exit metric=" Amazon" url="https://www.amazon.com/Santa-Claus-Comin-Little-Drummer/dp/B00006II5M"></gwd-exit>
     <gwd-exit metric=" " url="https://www.amazon.com/Santa-Claus-Comin-Town-Screen/dp/B000R7G6KO"></gwd-exit>
   </gwd-doubleclick>
   <script type="text/javascript" id="gwd-init-code">
